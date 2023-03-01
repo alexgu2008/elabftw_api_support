@@ -126,7 +126,7 @@ Our files are now ready for use and we have to specify which content we want to 
 
 ### Upload several files at once
 
-If you want to upload the contents of an entire folder, you can alternatively use the following functions. Again, this is the case of the already existing experiment and the new one to be created.
+If you want to upload the content of an entire folder, you can alternatively use the following functions. Again, this is the case of the already existing experiment and the new one to be created.
 
 [existing_entry_serveral_files.py](https://github.com/alexgu2008/elabftw_api_support/blob/main/existing_entry_serveral_files.py)
 ```
