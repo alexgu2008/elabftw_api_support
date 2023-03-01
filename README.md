@@ -128,7 +128,7 @@ Our files are now ready for use and we have to specify which content we want to 
 
 You can find further usage options in the [official documentation](https://doc.elabftw.net/api/) of the eLabFTW API features. In the meantime, a new version of the API interface has been released, more about this in the future.
 
-# # REST API Version 2
+# REST API Version 2
 
 <b>Guide is in progress!</b>
 
