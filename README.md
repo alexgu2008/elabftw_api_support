@@ -124,6 +124,57 @@ Our files are now ready for use and we have to specify which content we want to 
 
 2. New Experiment/Database Item: To create a new experiment or database item we have to specify the content for "title", "date" and "body" in the file [new_entry.py](https://github.com/alexgu2008/elabftw_api_support/blob/main/new_entry.py). This is the same procedure for an experiment entry and database item. In the case of an experiment you can also directly defina a file that is also uploaded to the new experiment.
 
+### Upload several files at once
+
+If you want to upload the contents of an entire folder, you can alternatively use the following functions. Again, this is the case of the already existing experiment and the new one to be created.
+
+[existing_entry_serveral_files.py](https://github.com/alexgu2008/elabftw_api_support/blob/main/existing_entry_serveral_files.py)
+```
+
+import os
+import elabapy
+import json
+from requests.exceptions import HTTPError
+manager = elabapy.Manager(endpoint="https://elabftw.tugraz.at/api/v1/",token="API_KEY")
+
+local_folder_path = r"C:\Path\to\folder"
+id_experiment = 100
+
+## Upload several files to an existing experiment entry. "100" is the ID of the experiment. Change to the desired one.
+
+for filename in os.listdir(local_folder_path):
+    local_file_path = os.path.join(local_folder_path, filename)
+    if os.path.isfile(local_file_path):
+        with open(local_file_path, 'r+b') as myfile:
+            params = { 'file': myfile }
+            print(manager.upload_to_experiment(id_experiment, params))
+            
+```
+
+[new_entry_several_files.py](https://github.com/alexgu2008/elabftw_api_support/blob/main/new_entry_several_files.py)
+```
+
+import os
+from eLabFTW_api_config import Experiment
+
+## Create a new extry in Experiments with optional file upload
+
+title = "Test_Title"
+date = "20230216"
+body = "Test body"
+local_folder_path = r"C:\path\to\folder"
+#Initalize class as "exp"
+exp = Experiment()
+#Create new entry in Experiments
+exp.create_experiment(title,date,body)
+#Upload several file to this new entry
+for filename in os.listdir(local_folder_path):
+    local_file_path = os.path.join(local_folder_path, filename)
+    if os.path.isfile(local_file_path):
+        exp.upload_file(local_file_path)
+        
+```
+
 ## Additional functions
 
 You can find further usage options in the [official documentation](https://doc.elabftw.net/api/) of the eLabFTW API features. In the meantime, a new version of the API interface has been released, more about this in the future.
