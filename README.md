@@ -1,6 +1,6 @@
 eLabFTW is an electronic solution to the classic lab notebook and offers many additional practical features (schedular, collaborative working, lab equipment management, etc.). It is an open source solution that is already in use at many research institutions worldwide.
 
-The page is intended to provide support for the use of eLabFTWs API feature. You will find a guide to prepare your system and simple scripts that you can integrate into your code.. If you have a question or request about eLabFTW (e.g. create a team or add a user) please contact the SysAdmin.
+The page is intended to provide support for the use of eLabFTWs API feature. You will find a guide to prepare your system and simple scripts that you can integrate into your code. If you have a question or request about eLabFTW (e.g. create a team or add a user) please contact the SysAdmin.
 
 # REST API Version 1
 
