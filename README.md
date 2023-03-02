@@ -184,8 +184,8 @@ You can find further usage options in the [official documentation](https://doc.e
 <b>Guide is in progress!</b>
 
 ## Contact
-*RDM* *Team*<br>
-<rdmteam@tugraz.at>
+*Ticket*<br>
+<elabftw-support@tugraz.at>
 
 *SysAdmin:* *Alexander* *Gruber*<br>
 <alexander.gruber@tugraz.at>
