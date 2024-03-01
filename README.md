@@ -28,7 +28,7 @@ Now we need the python files with the corresponding instructions to trigger cert
 
 ## Python Files
 
-In order to be able to use various functions of the API interface, we create a configuration file which we use as the basis for all other files. Here you only need to replace the value 'API_KEY' at the position " API_KEY = 'API_KEY' " with the generated KEY in the User Panel and save the file. It is important for all other files that all scripts are in the same folder.
+In order to be able to use various functions of the API interface, we create a configuration file which we use as the basis for all other files. Here you only need to replace the value 'API_KEY' at the position " API_KEY = 'API_KEY' " with the generated KEY in the User Panel and save the file. It is important for all other files that all scripts are in the same folder. The file is available here: ([eLabFTW_config_api2.py](https://github.com/alexgu2008/elabftw_api_support/blob/main/eLabFTW_config_api2.py))
 
 ```
 
@@ -63,7 +63,7 @@ class Helper_elabftw:
 
 ```
 
-We will deal with two cases here. In the first case, we have already created an experiment in eLabFTW and we now want to attach different files to this entry. If you want to upload the content of an entire folder, this is also included in the example. The following short script ([existing_entry.py](https://github.com/alexgu2008/elabftw_api_support/blob/main/existing_entry.py)) is sufficient for this:
+We will deal with two cases here. In the first case, we have already created an experiment in eLabFTW and we now want to attach different files to this entry. If you want to upload the content of an entire folder, this is also included in the example. The following short script ([eLabFTW_existing__entries.py](https://github.com/alexgu2008/elabftw_api_support/blob/main/eLabFTW_existing__entries.py)) is sufficient for this:
 
 ```
 
@@ -91,7 +91,7 @@ for filename in os.listdir(local_folder_path):
 
 ```
 
-In the second case, we want to create a new experiment with the possibility to attach files directly to this experiment. If you want to upload the content of an entire folder, this is also included in the example.
+In the second case, we want to create a new experiment with the possibility to attach files directly to this experiment. If you want to upload the content of an entire folder, this is also included in the example. The following short script ([eLabFTW_new_entries.py](https://github.com/alexgu2008/elabftw_api_support/blob/main/eLabFTW_new_entries.py)) includes this:
 
 ```
 
