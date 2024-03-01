@@ -130,7 +130,7 @@ for filename in os.listdir(local_folder_path):
 
 ## Additional functions
 
-You can find further usage options in the [official documentation](https://doc.elabftw.net/api/) of the eLabFTW API features. In the meantime, a new version of the API interface has been released, more about this in the future.
+You can find further usage options in the [official documentation](https://doc.elabftw.net/api/) of the eLabFTW API features.
 
 ## Contact
 *Ticket*<br>
