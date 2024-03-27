@@ -136,7 +136,7 @@ for filename in os.listdir(local_folder_path):
 ```
 ## Replace files in an experiment <a name="replace_files"></a>
 
-You can also replace existing files that you have attached to an entry with another file. This can be interesting if you have a metadata file that is to be replaced automatically, or a small measurement log that is to be expanded regularly. The replaced files are still available in the archive.
+You can also ([replace existing files](https://github.com/alexgu2008/elabftw_api_support/blob/main/eLabFTW_replace_upload.py)) that you have attached to an entry with another file. This can be interesting if you have a metadata file that is to be replaced automatically, or a small measurement log that is to be expanded regularly. The replaced files are still available in the archive.
 
 ```
 
