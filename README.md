@@ -10,10 +10,6 @@ The page is intended to provide support for the use of eLabFTWs API feature. You
 3. [Upload files to experiments](#upload_files)
 4. [Replace files in an experiment](#replace_files)
 
-
-## Export of entries <a name="export_entries"></a>
-
-
 ## Setup <a name="setup"></a>
 Since it is an HTTP REST API, the tool used only needs to understand HTTP. In this setup we use python as the tool. For this purpose, a library has already been set up with the name elabapy, which we simply install with pip. To do this, we work in the shell and use, for example: the Anaconda Prompt Shell and enter the following in the console:<br>
 
